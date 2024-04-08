@@ -1,0 +1,1 @@
+This is the final project a part of the Odin Project's Intermediate HTML and CSS Course. In this I am putting together all the CSS Grid skills that I have learned in order to create an admin dashboard website layout. 
