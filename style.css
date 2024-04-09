@@ -11,11 +11,17 @@ li {
     margin: 15px; 
 }
 
+p {
+    font-size: 13px; 
+    color: gray;
+    font-family: "Roboto"; 
+}
+
 .container { 
     display: grid;
     grid-template-columns: 1fr repeat(3, 2fr); 
     grid-template-rows: 1fr repeat(3, 2fr); 
-    height: 100vh;
+    height: 150vh;
     width: 100vw; 
 }
 
@@ -81,18 +87,21 @@ li {
     font-family: "Roboto";
     font-weight: 900; 
     font-size: 15px; 
+    color: black; 
 }
 
 .welcome-txt {
     font-family: "Roboto";
     font-weight: 900;
     font-size: 10px; 
+    color: black; 
 }
 
 .welcome-user {
     font-family: "Roboto";
     font-weight: 900;
     font-size: 20px; 
+    color: black; 
 }
 
 .header-btns {
@@ -152,7 +161,106 @@ li {
 }
 
 .content-area {
-    background-color: lightgray; 
+    background-color: lightgrey; 
     grid-column: 2 / 5; 
     grid-row: 2 / 5; 
+    display: grid; 
+    grid-template-rows: 1fr 2fr 2fr 2fr; 
+    grid-template-columns: 1fr 1fr 1fr; 
+    align-items: center; 
+    justify-content: center; 
+    gap: 10px; 
+    padding: 10px; 
+}
+
+.card {
+    background-color: white; 
+    justify-self: center; 
+    border-radius: 5px; 
+    height: 200px; 
+    display: flex; 
+    flex-direction: column;
+}
+
+.card-one {
+    grid-row: 2 / 3;
+    grid-column: 1 / 2; 
+    gap: 57px; 
+}
+
+.card-two {
+    grid-row: 3 / 4;
+    grid-column: 1 / 2; 
+    gap: 57px; 
+}
+
+.card-three {
+    grid-row: 4 / 5; 
+    grid-column: 1 / 2; 
+    gap: 41.5px; 
+}
+
+.card-four {
+    grid-row: 2 / 3;
+    grid-column: 2 / 3; 
+    gap: 25px; 
+}
+
+.card-five {
+    grid-row: 3 / 4; 
+    grid-column: 2 / 3; 
+    gap: 25px; 
+}
+
+.card-six {
+    grid-row: 4 / 5; 
+    grid-column: 2 / 3; 
+    gap: 41px; 
+} 
+
+.card-content {
+    padding: 20px; 
+}
+
+.card-icons {
+    padding: 15px; 
+    display: flex; 
+    justify-content: flex-end; 
+    align-self: flex-end; 
+    justify-self: flex-end; 
+    gap: 20px; 
+}
+
+
+.announce-content-card {
+    grid-row: 2 / 3; 
+    background-color: white; 
+    border-radius: 5px; 
+    padding: 10px; 
+}
+
+.trending-card {
+    display: flex; 
+    flex-direction: column; 
+    gap: 20px; 
+    background-color: white; 
+    padding: 10px; 
+    border-radius: 5px; 
+}
+
+.trend {
+    grid-row: 3 / 5; 
+}
+
+.trend-title {
+    grid-row: 3 / 4;
+}
+
+.announce-title {
+    grid-row: 1 / 2; 
+    grid-column: 3 / 4; 
+}
+
+.flex {
+    display: flex; 
 }
